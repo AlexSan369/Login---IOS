@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'virtuality_demoregular';
+    src: url('virtuality-webfont.woff2') format('woff2'),
+         url('virtuality-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family:'virtuality_demoregular'; */ 
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='69.141' height='40' patternTransform='scale(3) rotate(60)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(101,50%,83.5%,1)'/><path d='M69.212 40H46.118L34.57 20 46.118 0h23.094l11.547 20zM57.665 60H34.57L23.023 40 34.57 20h23.095l11.547 20zm0-40H34.57L23.023 0 34.57-20h23.095L69.212 0zM34.57 60H11.476L-.07 40l11.547-20h23.095l11.547 20zm0-40H11.476L-.07 0l11.547-20h23.095L46.118 0zM23.023 40H-.07l-11.547-20L-.07 0h23.094L34.57 20z'  stroke-width='1' stroke='hsla(4,100%,77.3%,1)' fill='none'/></pattern></defs><rect width='100%' height='100vh' transform='translate(0,0)' fill='url(%23a)'/></svg>")    
+}
+
+article{
+    width: 400px;
+    height: auto;
+    border-radius: 2%;
+    background-color: #cdeac0;
+    padding: 2rem;
+}
+article p{
+    text-align: center;
+    margin-top: 15px;
+}
+article > h1 {
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: .48rem;
+    line-height: 2.4rem;
+    border-radius: .48rem;
+    text-align: center;
+    margin-bottom: 5%;
+    color: #ff938b;
+    letter-spacing: .2rem;
+    background-color: #cdeac0;
+    box-shadow: 0px 6px violet,
+             inset  0px -7px rgb(243, 193, 243);
+    text-shadow: 0 1px .2rem #000;
+}
+
+
+input{
+    display: block;
+    margin: 3% auto 0 auto;
+    font-size: 1.1em;
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    border: 0.1em solid black;
+    background-color: rgba(255,255,255,0.3);
+    color: black;
+    font-weight: bold;
+}
+input[type=submit]{
+    background-color: rgba(207, 11, 11, 0.356);
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-top: 12%;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    transition: 0.9;
+    font-weight: bolder;
+    color:rgb(207, 11, 11, 0.356);
+    background-color: rgba(255,255,255,0.1);
+    
+}
+
+a{
+    text-decoration: none;
+    color: rgb(181, 255, 9);
+    font-weight: 900;
+    background-color: rgb(116, 116, 9);
+    padding: .2rem .4rem;
+    border-radius: .2rem;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+#content{
+    background-color:rgb(42, 15, 66, 0.369);
+    height: inherit;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 10px;
+    border: 3px solid rgb(200, 255, 3, 0.6);
+    box-shadow: 3px 6px 9px black;
+
+}
+
+#mostrar{
+    background-color: rgba(137, 43, 226);
+    width: 270px;
+    border-radius: 10px;
+    padding: 6px 9px;
+    color: aliceblue;
+    font-weight: bolder;
+    left: 60%;
+    box-shadow: 3px 6px violet;    
+    margin: 20px 0 0 150px;
+    display: none;
+}
+#passarMouse:hover + #mostrar{
+    display: block;
+}
+/*FORMATAÇÃO PLACEHOLDER*/
+::-webkit-input-placeholder  { color:rgb(32, 26, 82);font-weight: bold;font-size: 1.2em;letter-spacing: 2px; font-family:'Courier New', Courier, monospace}
+input:-moz-placeholder { color:rgb(112, 128, 172);font-weight: bold;font-size: 1.2em; letter-spacing: 2px;font-family: Arial, Helvetica, sans-serif;}
+textarea:-moz-placeholder { color:rgb(136, 172, 112);font-weight: bold;font-size: 1.2em; letter-spacing: 2px; font-family: Arial, Helvetica, sans-serif; }
